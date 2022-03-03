@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Anderson Post
+
+🎙 News blog that renders the most recent news in US.
+
+Has the feature of filtering the results with categories
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
