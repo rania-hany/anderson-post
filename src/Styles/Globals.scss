@@ -1,9 +1,17 @@
-$dark1-color: #2A2A2A;
-$dark2-color: #565656;
-$dark3-color: #7C7C7C;
-$light-color: #E7E7E7;
-$white-color: #fff;
-$red-color:#F02F23; 
+@import 'variables';
+@import 'mixins';
+
+.notification {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 40px 0px;
+    &.error {
+        @include notification-type(rgba(255, 37, 58, 0.1),  $red_color)
+    }
+    &.success {
+        @include notification-type(rgba(37, 255, 110, 0.1),  green)
+    }
+}
 
 
 .btn {
@@ -42,10 +50,6 @@ $red-color:#F02F23;
         }
     }
 
-}
-
-@mixin border-bottom {
-    border-bottom: 1px solid $light_color;
 }
 
 .center {
@@ -89,7 +93,6 @@ img {
     opacity: 0.78;
 }
 
-
 a {
     color: inherit; 
     text-decoration: inherit;
@@ -100,9 +103,6 @@ a {
         opacity: 0.5;
     }
 }
-
-
-
 
 a:hover img {
     opacity: 0.7;

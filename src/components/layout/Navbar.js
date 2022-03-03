@@ -1,25 +1,20 @@
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { setSelectedCategoryAction } from '../../store/categories.action';
 import './Navbar.scss';
 
-const categories = [
-    { key: '1', name: 'Business' },
-    { key: '2', name: 'Entertainment' },
-    { key: '3', name: 'General' },
-    { key: '4', name: 'Health' },
-    { key: '5', name: 'Science' },
-    { key: '6', name: 'Sports' },
-    { key: '7', name: 'Technology' }
+function Navbar() {
 
-]
-
-
-function Navbar(props) {
+    const dispatch = useDispatch();
+    const categoriesList = useSelector(state => state.list);
     function filterHandler (categoryName) {
-        props.onFilter(categoryName)
+        setSelectedCategoryAction.payload = categoryName;
+        dispatch(setSelectedCategoryAction);
     } 
 
     return <div className="navbar">
-        {[categories.map((category, index) => {
+        {[categoriesList.map((category, index) => {
             return <Link to="/"  key={index} >
                 <div className="category"
                     onClick={filterHandler.bind(this, category.name)}>

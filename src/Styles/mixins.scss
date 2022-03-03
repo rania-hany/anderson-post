@@ -1,0 +1,9 @@
+@mixin border-bottom {
+    border-bottom: 1px solid $light_color;
+}
+
+
+@mixin notification-type($bg-color, $border-color) {
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+}

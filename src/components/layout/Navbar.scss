@@ -1,5 +1,7 @@
-@import '../../Styles/Globals.scss';
+@import '../../Styles/variables.scss';
+@import '../../Styles/mixins.scss';
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
 .navbar {
     background-color: $white-color;
     height: 50px;

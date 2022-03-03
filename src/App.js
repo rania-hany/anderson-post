@@ -1,5 +1,5 @@
 import './App.css';
-import './Styles/Globals.scss';
+import './Styles/globals.scss';
 
 import Layout from './components/layout/Layout';
 import AllPostsPage from './Pages/AllPostsPage';
@@ -13,12 +13,12 @@ function App() {
   return (
     <Layout>
       <Switch>
-      <Route path="/" exact>
-        <AllPostsPage/>
-      </Route>
-      <Route path="/post">
-        <PostsPage/>
-      </Route>
+        <Route path="/" exact>
+          <AllPostsPage />
+        </Route>
+        <Route path="/post">
+          <PostsPage />
+        </Route>
       </Switch>
     </Layout>
   );

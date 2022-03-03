@@ -14,8 +14,8 @@ function Header() {
 
         <nav className='side-menu'>
             <ul>
-                <li><a href="#">Newsletter</a></li>
-                <li><a href="#">Sign in</a></li>
+                <li><span>Newsletter</span></li>
+                <li><span>Sign in</span></li>
                 <li><button className='btn btn-primary'>Subscribe</button></li>
             </ul>
         </nav>
@@ -26,16 +26,7 @@ function Header() {
                 <h1 className='title'>Anderson Post</h1>
             </Link>
         </div>
-
     </header>
-
 }
 
 export default Header;
-
-{/* <div className='side-menu'>
-            <a href="#">Newsletter</a>
-            <a href="#">Sign in</a>
-            <button className='btn btn-primary'>Subscribe</button>
-            <FontAwesomeIcon icon={faMagnifyingGlass} className="font-awesome"/>
-        </div> */}
