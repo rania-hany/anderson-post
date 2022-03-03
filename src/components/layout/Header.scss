@@ -1,0 +1,101 @@
+@import '../../Styles/Globals';
+
+.my-header {
+    background-color: $white-color;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid $light_color;
+    position: relative;
+    .logo {
+        text-align: center;
+        width: 80%; 
+        margin: 0px 10%;
+        position: absolute;
+        top: 0px;
+        .underscore{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border-bottom: 2px solid $red_color;
+            margin-right: 5px;
+        }
+        .title{
+            color: $dark1-color;
+            font-family: serif;
+            display: inline-block;
+            font-size: 1.6em;
+            margin: 0;
+        }
+    }
+
+    .side-menu{
+        display: none;
+        position: absolute;
+        left: 0px;
+        right: auto;
+        top: 61px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        box-shadow: 1px 1px 6px $dark2-color;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            background-color: $white-color;
+            width: 100%;
+            li {
+                cursor: pointer;
+                
+            }
+        }
+        .font-awesome{
+            color: $dark1-color;
+        }
+    }
+
+    .search {
+        float: right;
+        margin: 0px 24px;
+    }
+    .hide {
+        display: none;
+    }
+
+    #hiddenCheckbox:checked + label ~ .side-menu {
+        display: flex;
+    }
+
+    .mobileMenu {
+        padding: 20px;
+        line-height: 0px;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .my-header {
+        .side-menu{
+            display: flex;
+            left:auto;
+            right: 40px;
+            top: 0px;
+            width: 30vw;
+            box-shadow: none;
+            ul {
+                padding: 0;
+                flex-direction: row;
+            }
+        }
+        .mobileMenu {
+            padding: 20px;
+            line-height: 0px;
+            display: none;
+        }
+    }
+}

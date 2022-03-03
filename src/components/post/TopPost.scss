@@ -1,0 +1,29 @@
+@import '../../Styles/Globals.scss';
+
+.top-post {
+    padding: 20px 0px;
+    border-bottom: 1px solid $light-color;
+    .breaking {
+        letter-spacing: 0.3em;
+        color: $dark1-color;
+        margin-bottom: 8px;
+    }
+    .image {
+        img {
+
+            width: 100%;
+        }
+    }
+    .details {
+        .category {
+            margin: 10px 0px;
+        }
+        .body {
+            font-size: 15px;
+            line-height: 21px;
+            color: $dark2-color;
+            margin-bottom: 8px;
+        }
+
+    }
+}

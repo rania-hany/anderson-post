@@ -1,0 +1,9 @@
+@import '../Styles/Globals.scss';
+
+.externalLink {
+    text-align: right;
+    float: right;
+    font-size: 11px;
+    text-decoration: underline;
+    color: $dark3-color;
+}

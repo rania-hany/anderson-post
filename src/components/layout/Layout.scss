@@ -1,0 +1,17 @@
+.content{
+    margin: 0px 5vw;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .content{
+    margin: 0px 10vw;
+  }
+}
+
+
+@media screen and (min-width: 1100px) {
+  .content{
+    margin: 0px 27.35vw;
+  }
+}

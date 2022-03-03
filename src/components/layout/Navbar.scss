@@ -1,0 +1,47 @@
+@import '../../Styles/Globals.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+.navbar {
+    background-color: $white-color;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    overflow-y: hidden; 
+    @include border-bottom;
+    a{
+
+        margin: 0px 20px;
+        &:first-of-type {
+            margin-left: 0px;
+        }
+        &:last-of-type {
+            margin-right: 0px;
+        }
+    }
+    .category {
+        display: inline-block;
+        font-family: 'Poppins';
+        font-size: 14px;
+
+    }
+}
+
+
+
+@media screen and (min-width: 700px) {
+    .navbar {
+        overflow: hidden;
+        a {
+            margin: 0px;
+        }
+    }  
+    
+}
+  
+  
+  @media screen and (min-width: 1100px) {
+    .content{
+      margin: 0px 27.35vw;
+      padding-bottom: 20px;
+    }
+  }

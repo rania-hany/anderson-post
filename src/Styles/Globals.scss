@@ -1,0 +1,109 @@
+$dark1-color: #2A2A2A;
+$dark2-color: #565656;
+$dark3-color: #7C7C7C;
+$light-color: #E7E7E7;
+$white-color: #fff;
+$red-color:#F02F23; 
+
+
+.btn {
+    font-family: 'Poppins';
+    padding: 4px 16px;
+    border-radius: 14px;
+    border: 0px;
+    height: 28px;
+    margin: 15px 0px;
+    &:hover{
+        cursor: pointer;
+    }        
+    &:active {
+        background-color: $light-color;
+        color: $white-color;
+        border: none;
+    }
+    &.btn-primary {
+        background-color: $red-color;
+        color: $white-color;
+        &:hover {
+            background-color: $white-color;
+            color: $red-color;
+            border: 1px solid $red-color;
+        }
+
+    }
+
+    &.btn-secondary {
+        background-color: $white-color;
+        color: $red-color;
+        border: 1px solid $red-color;
+        &:hover {
+            background-color: $red-color;
+            color: $white-color;
+        }
+    }
+
+}
+
+@mixin border-bottom {
+    border-bottom: 1px solid $light_color;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spinner {
+    line-height: 400px;
+    height: 70vh;
+    justify-content: center;
+    color: $red-color
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 8px 0px;
+}
+
+h4 {
+    font-size: 11px;
+    margin: 0;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $red-color;
+    font-style: normal;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
+
+.date {
+    color: $dark3-color;
+    font-weight: 300;
+    font-size: 11px;
+    opacity: 0.78;
+}
+
+
+a {
+    color: inherit; 
+    text-decoration: inherit;
+    &:hover {
+        opacity: 0.5;
+    }
+    :hover {
+        opacity: 0.5;
+    }
+}
+
+
+
+
+a:hover img {
+    opacity: 0.7;
+}
