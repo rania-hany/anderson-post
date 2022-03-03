@@ -6,6 +6,11 @@ Has the feature of filtering the results with categories
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+💫 Deploy
+This app is deployed & CI/CD by Netlify
+
+Deploy to Netlify
+
 ## Available Scripts
 
 In the project directory, you can run:
