@@ -1,5 +1,5 @@
 import './App.css';
-import './Styles/globals.scss';
+import './Styles/Globals.scss';
 
 import Layout from './components/layout/Layout';
 import AllPostsPage from './Pages/AllPostsPage';
